@@ -158,12 +158,12 @@ class UsersController implements \Anax\DI\IInjectionAware
 	
 	/**
      * View the users with most reputation
-     * 
+     *
      * @return void
      */
 	public function highestReputationAction(){
 		
-		if(empty($users = $this->users->query('M. * , COUNT( rep_giver ) AS rep')
+		if(empty($users = $this->users->query('M.*, (SELECT count(*) FROM phpmvc_projekt_reputation WHERE type = "+" AND member_id = M.id)  - (SELECT count(*) FROM phpmvc_projekt_reputation WHERE type = "-" AND member_id = M.id) AS rep')
 			->from('reputation AS R')
 			->join('user AS M', 'M.id = R.member_id')
 			->groupBy('R.member_id')
@@ -207,7 +207,7 @@ class UsersController implements \Anax\DI\IInjectionAware
 		$id = explode('-', $id)[0];
 		
 		
-		$user = $this->users->query('M. * , COUNT( rep_giver ) AS rep')
+		$user = $this->users->query('M.*, (SELECT count(*) FROM phpmvc_projekt_reputation WHERE type = "+" AND member_id = M.id)  - (SELECT count(*) FROM phpmvc_projekt_reputation WHERE type = "-" AND member_id = M.id) AS rep')
 				->from('reputation AS R')
 				->rightJoin('user AS M', 'M.id = R.member_id')
 				->where('M.id = ?')
