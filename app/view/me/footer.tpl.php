@@ -1,0 +1,1 @@
+<p>Copyright <?="&copy; ".date("Y");?> Fredrik Mattiasson. All rights are reserved</p>

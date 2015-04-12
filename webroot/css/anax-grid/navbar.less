@@ -1,0 +1,65 @@
+.nav_menu{
+	padding: 5px 15px;
+	height: 60px;
+}
+
+.nav_menu  ul ul {
+	display: none;
+}
+
+.nav_menu  ul li:hover > ul {
+	display: block;
+}
+.nav_menu  ul {
+	padding: 0 20px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+.nav_menu  ul:after {
+	content: ""; clear: both; display: block;
+}
+	
+.nav_menu  ul li {
+	float: left;
+}
+.nav_menu  ul li:hover a {
+	border-top: 1px solid #CCCCCC;
+}
+	
+.nav_menu  ul li a {
+	border-top: 1px solid transparent;
+	display: block; padding: 15px 20px;
+	color: #757575; text-decoration: none;
+}
+
+.nav_menu  ul ul {
+	background: white; 
+	border-left: 4px solid #3d7aa4;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+.nav_menu  ul ul li {
+	float: none; 
+	position: relative;
+}
+.nav_menu  ul ul li a {
+	padding: 6px 35px;
+	color: #757575;
+}
+.nav_menu  ul ul li a:hover {
+	color: #3d7aa4;
+}
+.nav_menu  ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+
+.nav_menu .selected > a, .nav_menu .is-parent  > a{
+    border-top: 1px solid #3d7aa4;
+	color: #3d7aa4 !important;
+}
+.nav_menu .selected-parent  > a{
+    border-top: 1px solid #3d7aa4;
+}

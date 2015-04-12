@@ -1,0 +1,209 @@
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+
+#nav.affix + .container, #nav.affix + .jumbotron{
+	margin-top: 74px;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+#header {
+	height: 110px;
+	display: block;
+	background-image: url('../../img/Bear Teh Papur-logo(1).png');
+	background-repeat: no-repeat;
+}
+
+.typografi #wrap-main #main, .typografi #wrap-main #sidebar{
+	background-color: transparent !important;
+	color: #333 !important;
+}
+
+#main, 
+#flash,
+#featured-1,
+#featured-2,
+#featured-3,
+#sidebar,
+#triptych-1,
+#triptych-2,
+#triptych-3,
+#footer-col-1,
+#footer-col-2,
+#footer-col-3,
+#footer-col-4 {
+    //background: #3d7aa4;
+    color: #000;
+}
+
+#flash {
+    .column(@columns);
+    min-height:58px;
+}
+
+#main{
+    .column(@columns / 3 * 2);
+    min-height:58px;
+}
+
+.jumbotron{
+	background: url("../../img/World-Of-Warcraft-Druid-Desktop-Background-Wallpaper.jpg") no-repeat fixed center -18px / cover  rgba(0, 0, 0, 0) !important;
+	color: #fff !important;
+	text-shadow: 1px 2px 1px #000;
+}
+
+.wrap-user-questions, .wrap-user-answers{
+	.column(@columns / 2);
+}
+
+.wrap-question .votes, .wrap-question .answers{
+	.column(@columns / 9);
+	min-height: 20px;
+	text-align: center;
+	display: block;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+
+.wrap-question .summary{
+	.column(@columns / 3 * 2.445);
+}
+
+.started, .tags{
+	color: #777;
+	font-size: 0.85em;
+}
+
+.wrap-question, .wrap-question-single{
+	border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0 10px;
+}
+/*.wrap-answer .summary{
+	margin-bottom: 25px;
+}*/
+
+.wrap-question-single h3{
+	border-bottom: 1px solid #e0e0e0 !important;
+	margin-bottom: 10px; 
+	padding-bottom: 15px;
+}
+
+.wrap-question-single .votes, .wrap-answer .votes{
+	.column(@columns / 8);
+	color: #818185;
+	font-size: 1.5em;
+	min-height: 20px;
+	text-align: center;
+	display: block;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	line-height: 1em;
+	height: 100%;
+}
+.wrap-question-single .votes i, .wrap-answer .votes i{
+	font-size: 1.3em;
+	color: #818185 !important;
+}
+
+.wrap-question-single .wrap-container, .wrap-answer .wrap-container{
+	.push(1.15);
+}
+
+.wrap-answer h4{
+	border-bottom: 1px solid #e0e0e0 !important;
+	padding: 12px 0 10px;
+}
+
+.add-comment{
+	color: #888;
+	cursor: pointer;
+	//margin-top: 10px;
+}
+
+.wrap-answer .add-comment:hover{
+	color: #30A7FC;
+}
+
+.wrap-answer .comment-area{
+	margin-bottom: 30px;
+}
+
+.wrap-answer .comment:first-child{
+	border-top: 1px solid #e0e0e0;
+	padding-top: 5px;
+}
+
+.wrap-users{
+	margin-bottom: 5px;
+}
+
+.comment-area{
+	.push(1.45);
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+.comment-area .comment > p {
+    display: inline;
+}
+
+.comment-area .comment{
+	padding-bottom: 5px;
+}
+
+.comment-container{
+	display: none;
+}
+
+.wrap-user-questions,
+wrap-user-answers,
+.wrap-question,
+.wrap-answer .summary,
+.wrap-question-single,
+#wrap-featured,
+#wrap-main,
+#wrap-triptych,
+#wrap-footer-col {
+    .clearfix();
+}
+
+
+.fa-input {
+	font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	cursor: pointer;
+}
+
+.fa-icon-only{
+	border: none;
+	background-color: transparent;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.form-element-required{
+    color:red;
+	margin-left: 3px;
+}
+
+.validation-message{
+	list-style-type: none;
+	margin-left: -21px;
+}
+
+.disabled{
+	cursor: not-allowed;
+}

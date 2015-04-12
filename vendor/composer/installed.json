@@ -1,0 +1,143 @@
+[
+    {
+        "name": "mos/cform",
+        "version": "2.x-dev",
+        "version_normalized": "2.9999999.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mosbth/cform.git",
+            "reference": "5a899ed1c8fe97ffafc2fcd84db0c161c74faf6b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mosbth/cform/zipball/5a899ed1c8fe97ffafc2fcd84db0c161c74faf6b",
+            "reference": "5a899ed1c8fe97ffafc2fcd84db0c161c74faf6b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2015-01-21 10:14:56",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Mos\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "me@mikaelroos.se",
+                "homepage": "http://mikaelroos.se",
+                "role": "Developer"
+            }
+        ],
+        "description": "Classes for HTML Forms",
+        "homepage": "http://dbwebb.se/",
+        "keywords": [
+            "Forms",
+            "education",
+            "html"
+        ]
+    },
+    {
+        "name": "mos/cdatabase",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mosbth/cdatabase.git",
+            "reference": "5746aa83f062321f8f9016f0bc57a6c0e65300fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mosbth/cdatabase/zipball/5746aa83f062321f8f9016f0bc57a6c0e65300fb",
+            "reference": "5746aa83f062321f8f9016f0bc57a6c0e65300fb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2015-03-13 15:36:43",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Mos\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikael Roos",
+                "email": "me@mikaelroos.se",
+                "homepage": "http://mikaelroos.se",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP classes for database handling upon PDO",
+        "homepage": "http://dbwebb.se",
+        "keywords": [
+            "education",
+            "framework",
+            "micro",
+            "module",
+            "mvc"
+        ]
+    },
+    {
+        "name": "frmb/language",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/frmb14/Language.git",
+            "reference": "853e209588c3e8e804c13b581f41103f6fa629fc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/frmb14/Language/zipball/853e209588c3e8e804c13b581f41103f6fa629fc",
+            "reference": "853e209588c3e8e804c13b581f41103f6fa629fc",
+            "shasum": ""
+        },
+        "require": {
+            "anax/mvc": "dev-master",
+            "php": ">=5.4"
+        },
+        "time": "2015-03-15 19:14:58",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Anax\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fredrik Mattiasson",
+                "email": "frmb14@student.bth.se",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP-class to render a specific language on the website depending on clients browser language for a multi-language website",
+        "keywords": [
+            "automatic",
+            "education",
+            "language",
+            "multi",
+            "text"
+        ]
+    }
+]
