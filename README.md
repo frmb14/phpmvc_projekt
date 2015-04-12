@@ -8,6 +8,7 @@ Efter kloningen är klar navigera till projekt\webroot\ öppna .htaccess filen o
 > RewriteBase /~frmb14/phpmvc/projekt/webroot/
 
 ####MySQL databasen
+Navigera till projekt\app\config och editera config_mysql.php med dina egna databas uppgifter.
 För att bygga MySQL databasen behöver du navigera till din hemsida och gå in på följande för att skapa databasen automatiskt
 > projekt/webroot/setup 
 
