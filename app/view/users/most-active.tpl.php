@@ -11,7 +11,7 @@
 				<span><b><a href="<?=$this->url->create('users/id/'.$user['id'])?>"><?=$user['acronym']?></a></b></span>
 				<div> <span class="badge"><?=$user['rep']?></span> reputation</div>
 			</div>
-			<div class="clearfix"></div>
+			<div class="clearfix" style="padding-bottom: 5px;"></div>
 
 		<?php endforeach; ?>
 	<?php else : ?>
